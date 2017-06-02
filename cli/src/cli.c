@@ -781,7 +781,7 @@ main (int argc, char *argv[])
         if (ret)
                 goto out;
 
-        ret = event_dispatch (ctx->event_pool);
+        ret = glfs_event_dispatch (ctx->event_pool);
 
 out:
 //        glusterfs_ctx_destroy (ctx);
