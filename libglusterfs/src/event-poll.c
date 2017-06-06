@@ -438,7 +438,7 @@ unlock:
 
 
 static int
-gf_event_dispatch_poll (struct event_pool *event_pool)
+event_dispatch_poll (struct event_pool *event_pool)
 {
         struct pollfd   *ufds = NULL;
         int              size = 0;
