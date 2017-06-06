@@ -296,7 +296,7 @@ set_fuse_mount_options (glusterfs_ctx_t *ctx, dict_t *options)
                                        cmd_args->fuse_attribute_timeout);
 
                 if (ret < 0) {
-                        gf_msg ("glusterfsd", GF_LOG_ERROR, errno, 
+                        gf_msg ("glusterfsd", GF_LOG_ERROR, errno,
                                 glusterfsd_msg_4, ZR_ATTR_TIMEOUT_OPT);
                         goto err;
                 }
@@ -2519,7 +2519,7 @@ main (int argc, char *argv[])
         if (ret)
                 goto out;
 
-        ret = event_dispatch (ctx->event_pool);
+        ret = gf_event_dispatch (ctx->event_pool);
 
 out:
 //        glusterfs_ctx_destroy (ctx);
