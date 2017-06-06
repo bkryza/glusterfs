@@ -647,7 +647,7 @@ glfs_poller (void *data)
 
 	fs = data;
 
-	glfs_event_dispatch (fs->ctx->event_pool);
+	gf_event_dispatch (fs->ctx->event_pool);
 
 	return NULL;
 }

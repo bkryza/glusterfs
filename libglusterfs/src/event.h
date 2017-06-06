@@ -110,7 +110,7 @@ int event_register (struct event_pool *event_pool, int fd,
 		    void *data, int poll_in, int poll_out);
 int event_unregister (struct event_pool *event_pool, int fd, int idx);
 int event_unregister_close (struct event_pool *event_pool, int fd, int idx);
-int glfs_event_dispatch (struct event_pool *event_pool);
+int gf_event_dispatch (struct event_pool *event_pool);
 int event_reconfigure_threads (struct event_pool *event_pool, int value);
 int event_pool_destroy (struct event_pool *event_pool);
 int event_dispatch_destroy (struct event_pool *event_pool);

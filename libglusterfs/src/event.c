@@ -115,7 +115,7 @@ out:
 
 
 int
-glfs_event_dispatch (struct event_pool *event_pool)
+gf_event_dispatch (struct event_pool *event_pool)
 {
         int ret = -1;
 
