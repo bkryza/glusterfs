@@ -810,8 +810,8 @@ event_reconfigure_threads_epoll (struct event_pool *event_pool, int value)
 
                 oldthreadcount = event_pool->eventthreadcount;
 
-                /* Start 'worker' threads as necessary only if event_dispatch()
-                 * was called before. If event_dispatch() was not called, there
+                /* Start 'worker' threads as necessary only if gf_event_dispatch()
+                 * was called before. If gf_event_dispatch() was not called, there
                  * will be no epoll 'worker' threads running yet. */
 
                 if (event_pool_dispatched_unlocked(event_pool)
